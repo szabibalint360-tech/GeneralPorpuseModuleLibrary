@@ -1,0 +1,9 @@
+<Solution>
+  <Configurations>
+    <Platform Name="ARM" />
+    <Platform Name="ARM64" />
+  </Configurations>
+  <Project Path="GeneralPorpuseModuleLibrary/GeneralPorpuseModuleLibrary.vcxproj" Id="1a058584-d62c-4113-944f-84e76248349c">
+    <Deploy />
+  </Project>
+</Solution>
