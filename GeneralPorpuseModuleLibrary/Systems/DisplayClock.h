@@ -84,9 +84,10 @@ public:
 		delay(delayTime);
 	}
 	void scrollOnPress() {
-		if (digitalRead(buttonPin) == LOW) {
-			cmdCounter ++;
-		}
+		//if (digitalRead(buttonPin) == LOW) {
+		//	cmdCounter ++;
+		//}
+		// ISR for button
 		process();
 		runCommand(cmdCounter);
 	}

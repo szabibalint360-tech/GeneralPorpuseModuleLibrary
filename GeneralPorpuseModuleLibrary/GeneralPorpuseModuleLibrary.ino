@@ -4,7 +4,7 @@
 
 constexpr uint8_t CLK_PIN = 9;
 constexpr uint8_t DIO_PIN = 8;
-constexpr uint8_t BUTTON_PIN = 7;
+constexpr uint8_t BUTTON_PIN = 2;// only pin 2 and 3 can be used for interrupts on most Arduino boards
 
 DisplayClock displayClock(CLK_PIN, DIO_PIN, BUTTON_PIN, &Wire);
 
@@ -16,7 +16,7 @@ void setup() {
 	displayClock.setBrightness(1, true);
 
 	//should only be set once then comment out
-	displayClock.setTime({ 0, 25, 16, 4, 17, 9, 2026 }); // Set time to 12:00:00 on Monday, 1 January, 2026
+	//displayClock.setTime({ 0, 2, 17, 4, 17, 9, 2026 }); // Set time to 12:00:00 on Monday, 1 January, 2026
 	
 }
 
